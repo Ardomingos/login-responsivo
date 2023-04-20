@@ -8,6 +8,7 @@
     margin: 0;
     box-sizing: border-box;
     z-index: 1;
+    --theme-color: #1bcbfc;
 }
 
 body{
@@ -23,7 +24,7 @@ body::after{
     content: '';
     position: fixed;
     inset:0;
-    background: #1bcbfc;
+    background: var(--theme-color);
     height: 100vh;
     clip-path: polygon(0 100%, 0 0, 65% 0, 35% 100%);
     z-index: -1;    
@@ -50,7 +51,7 @@ body::after{
 
 .login-card a{
     text-decoration: none;
-    color: #0037ff;
+    color: var(--theme-color)
 }
 
 
@@ -89,7 +90,7 @@ form div{
 }
 
 form div button{
-    background-color: #1bcbfc;
+    background-color: var(--theme-color);
     color: white;
     border: none;
     padding: 20px 40px;
@@ -102,7 +103,7 @@ form div button{
 
 form div button:active{
     scale: 0.95;
-    background-color: darken(#1bcbfc, 10%);
+    background-color: darken(var(--theme-color), 10%);
 }
 
 .form-element{
@@ -117,7 +118,7 @@ form div button:active{
 
 .form-element:focus{
     outline: none;
-    box-shadow: 0 0 0 2px #1bcbfc;
+    box-shadow: 0 0 0 2px var(--theme-color);
 }
 
 .form-checkbox-item{
@@ -195,7 +196,7 @@ form div button:active{
     display: inline-block;
     padding: 12px 30px;
     font-size: 16px;
-    border: 2px solid #1bcbfc;
+    border: 2px solid var(--theme-color);
     color: black;
     border-radius: 50px;
     cursor: pointer;
