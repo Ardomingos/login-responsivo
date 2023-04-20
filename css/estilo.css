@@ -10,8 +10,6 @@
     z-index: 1;
 }
 
-
-
 body{
     font-family: 'Poppins', sans-serif;
     display: flex;
@@ -32,6 +30,11 @@ body::after{
 }
 
 
+
+
+
+
+
 /*  Login-card  */
 
 .login-card{
@@ -45,22 +48,129 @@ body::after{
     grid-template-columns: auto auto
 }
 
-
-.other_methods{
-    margin-top: 3rem;
-    margin-bottom: 1.5rem;
-}
-
-
 .login-card a{
     text-decoration: none;
     color: #0037ff;
 }
 
+
+
+
+
+
+/* Coluna */
+
 .column{
     padding: 4rem;
 }
 
+
+
+
+
+
+/* Coluna com input de login*/
+
+h1{
+    margin-bottom: 15px;
+}
+
+form p{
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+form{
+    margin-top: 3rem;
+}
+
+form div{
+    margin-top: 1rem
+}
+
+form div button{
+    background-color: #1bcbfc;
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+    transition: all 0.2s;
+}
+
+form div button:active{
+    scale: 0.95;
+    background-color: darken(#1bcbfc, 10%);
+}
+
+.form-element{
+    width: 100%;
+    border: none;
+    background-color: #f1f1f1;
+    padding: 20px 30px;
+    font-size: 18px;
+    border-radius: 20px;
+    transition: box-shadow 0.2s;
+}
+
+.form-element:focus{
+    outline: none;
+    box-shadow: 0 0 0 2px #1bcbfc;
+}
+
+.form-checkbox-item{
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    margin-left: 5px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-buttons{
+    display: flex;
+    gap: 1rem;
+    
+}
+
+.social-buttons a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 22px;
+    color: white;
+    transition: scale 0.2s;
+}
+
+.social-buttons a.facebook{
+    background-color: #3b5998;
+}
+.social-buttons a.twitter{
+    background-color: #55acee;
+}
+.social-buttons a.github{
+    background-color: #111;
+}
+
+.social-buttons a:hover{
+    scale: .95;
+}
+
+
+
+
+
+
+/* Coluna texto de bem vindo*/
 
 .column:last-child{
     background: url('../img/bg.jpg') ;
@@ -98,97 +208,13 @@ body::after{
     color: white;    
 }
 
-form{
-    margin-top: 3rem;
-}
 
-form div{
-    margin-top: 1rem
-}
 
-form div button{
-    background-color: #1bcbfc;
-    color: white;
-    border: none;
-    padding: 20px 40px;
-    border-radius: 50px;
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 18px;
-    transition: all 0.2s;
-}
 
-form div button:active{
-    scale: 0.95;
-    background-color: darken(#1bcbfc, 10%);
-}
 
-h1{
-    margin-bottom: 15px;
-}
 
-.form-element{
-    width: 100%;
-    border: none;
-    background-color: #f1f1f1;
-    padding: 20px 30px;
-    font-size: 18px;
-    border-radius: 20px;
-    transition: box-shadow 0.2s;
-}
-
-.form-element:focus{
-    outline: none;
-    box-shadow: 0 0 0 2px #1bcbfc;
-}
-
-.form-checkbox-item{
-    display: flex;
-    align-items: center;
-    gap: .7rem;
-    margin-left: 5px;
-}
-
-.flex{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.social-buttons{
-    display: flex;
-    gap: 1rem;
-
-}
-
-.social-buttons a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    font-size: 22px;
-    color: white;
-    transition: scale 0.2s;
-}
-
-.social-buttons a.facebook{
-    background-color: #3b5998;
-}
-.social-buttons a.twitter{
-    background-color: #55acee;
-}
-.social-buttons a.github{
-    background-color: #111;
-}
-
-.social-buttons a:hover{
-    scale: .95;
-}
 
 /* responsivo */
-
 
 @media (max-width:992px) {
     .login-card{
